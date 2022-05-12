@@ -1,0 +1,103 @@
+
+
+.switch{
+  position: relative;
+  display: inline-block;
+  width: 64px;
+  height: 34px;
+  margin-top: 5px;
+}
+
+
+.switch input {   /* the same characteristics or from the last one*/
+    width: 0;
+    height: 0;
+    opacity: 0  /* without intensity*/
+}
+
+
+
+.slider{
+  background-color: deeppink ; /* slider - inside*/
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 25px;
+  width: 75px;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 34px;     /* px - MORE SPECIFICx */
+}
+
+.slider::before{
+   position: absolute;
+   content: ""; /* before - INSERT CONTENT BEFORE */
+   height: 25px;
+   width: 34px;
+   left: 4px;
+   bottom: 1px;
+   background-color: white;
+   transition: .4s;
+   -webkit-transition: .4s;
+   border-radius: 43%;
+}
+
+input:checked + .slider {   /* 2 states of input*/
+    background-color: orange;
+}
+
+input:focus + .slider{   /* after click  THE LAST ONE */
+    box-shadow: 0px 0px 20px orange ; 
+}
+
+input:checked + .slider::before{
+    transform: translateX(26px);
+}
+
+
+.btn{
+    background-color: deeppink;
+    color: white;
+    border-radius: 13%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    padding: 12px;
+}
+
+.btn:focus{
+    background-color: orange;
+}
+
+/* checked
+ELEMENTS*/
+
+
+/* transition - softer*/
+
+/*relative ONLY STRICT PARENT
+absolute ANY parent*/
+
+/* for specific movemenet - POSITION 
+only one by one
+*/
+/*box-shadow  offsetx offset y blur radius color  
+
+-y
++y
+-x +x
+
+*/
+/* checked on the state ON*/
+/* focus on the state OFF*/
+
+/* + after that NOT relatives */
+
+
+/* .color{  
+    background-color: deeppink;
+} */
+/*!important will override EVERYTHING/*
+
+/* normal === none for :before and :after

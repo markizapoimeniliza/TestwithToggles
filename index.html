@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+<meta charset = "UTF-8">
+<link rel="stylesheet" href="index.css">
+<meta name = "viewport" content="width = device-width, initial-scale = 1.0">
+<meta http-equiv="X-UA-compatible" content = "ie = edge">
+<title> Test 1</title>
+</head>
+
+<body>
+<div>
+    <div>Do you feel nervous with people who you like?</div> 
+<label class = "switch"  class = "answer">  <!-- in this case it is not necessary || everythins is ONE IN ANOETHER bc of label-->  
+    <input type = "checkbox" > <!--  radio - 1 time -->
+    <span class = "slider" onclick = "labels()"></span> <!--  -->
+</label>
+    <div>Do you tend to be easy-outgoing?</div>
+<label class = "switch" class = "answer">
+    <input type="checkbox">
+    <span class="slider" onclick = "labels()"></span>
+</label>
+    <div>Are you modest?</div>
+<label class = "switch"  class = "answer" >
+    <input type = "checkbox">
+    <span class = "slider" onclick = "labels()"></span>
+</label>
+    <div> Is it challenging for you to perform on the stage?</div>
+<label class = "switch" class = "answer" >
+        <input type = "checkbox">   <!-- it is already assigned to OnClick-->
+        <span class = "slider" onclick= "labels()"></span>
+</label>
+    <div>Do you  always have goosebumps before important dates?</div>
+<label class = "switch" class = "answer" > <!--  1 -->
+        <input type = "checkbox"> 
+        <span class = "slider" onclick = "labels()"></span> <!-- 0 --> 
+</label>
+<!-- output 0 1 as child - Parent -->
+    <div>Are you afraid of something?</div>
+<label class = "switch" class = "answer"  >
+        <input type = "checkbox" > <!--  CHECKED as it is already executed k-->
+        <span class = "slider" onclick = "labels()"></span>
+</label>
+</div>
+
+<br/>
+<button type = "submit" class = "btn" id = "Btn">
+FINISH 
+</button>
+<p id = "result"></p>
+
+</body>
+
+<script src = "practice.js"></script>
+<!-- <script src = "bindApplyCall.js"></script> -->
+</html>
+
+
+<!-- opt + cmd + arrow -->
