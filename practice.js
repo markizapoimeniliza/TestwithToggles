@@ -1,15 +1,3 @@
-//6 samples
-
-//1) 3 objects in 1 function - 2 immediately and 1 after sth (Test results + more info(after click)) ++++++
-//2) humanity of a Game - 3 worlds on the one planet
-//3) framework with color and fonts (+ movements)
-//4) set url of a site in console and get it
-//5) get(true) appear square  get(false) appear circle set - return square and circle
-//6)output all properties of 3 worlds
-
-
-
-//FOR JS ONLY IF IT IS IN VARIABLE
 
 let result = document.getElementById("result")
 let btn = document.getElementById("Btn")
